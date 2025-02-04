@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Homepage</title>
+    <link rel="stylesheet" href="Styles/style_ha.css">
+    <link rel="stylesheet" href="Styles/style_rf.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <link href="Styles/project_hm.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    
+    <header>
+        <nav class="nav_rf">
+            <a href="index.html"><h2 class="logo_rf">Smitten<span class="span_rf">Kitchen</span></h2></a>
+            <ul class="ul_rf">
+                <li class="li_rf"><a href="#" class="a_rf open_form_hm"><i class="fa-regular fa-user"></i> LogIn</a></li>
+                <li class="li_rf"><a href="index.html" class="a_rf">Home</a></li>
+                <li class="li_rf"><a href="ABOUT-US.html" class="a_rf">About Us</a></li>
+                <li class="li_rf dropdown_rf"><a href="#" class="a_rf">Categories</a>
+                    <ul class="dropdown-cat_rf">
+                        <li class="li_rf"><a href="italian.html" class="a_rf">Italian</a></li>
+                        <li class="li_rf"><a href="chinese.html" class="a_rf">Chinese</a></li>
+                    </ul>
+                </li>
+                <li class="li_rf"><i class="fa-solid fa-magnifying-glass"></i> <input type="text" class="input_rf"
+                        placeholder="Find a Recipe or Ingredient"></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="slider_ha">
+        <div class="list_ha">
+            <a href="recipes/buttershrimp.html" class="item_ha">
+                <img src="recipes/buttershrimp.jpg" alt="Recipe 1">
+                <div class="text-overlay_ha">
+                    <h2>Tuscan Butter Shrimp</h2>
+                    <p>Discover the best way to make Tuscan Butter Shrimp.</p>
+                </div>
+            </a>
+            <a href="recipes/marsala.html" class="item_ha">
+                <img src="recipes/marsala.png" alt="Recipe 2">
+                <div class="text-overlay_ha">
+                    <h2>Chiken Marsala</h2>
+                    <p>Enjoy this wonderful recipe with a rich taste.</p>
+                </div>
+            </a>
+            <a href="chinese recipes/chowmin.html" class="item_ha">
+                <img src="chinese recipes/chowmin.png" alt="Recipe 3">
+                <div class="text-overlay_ha">
+                    <h2>Chow Mein</h2>
+                    <p>A recipe that will make your taste buds dance.</p>
+                </div>
+            </a>
+        </div>
+        <div class="buttons_ha">
+            <button id="prev_ha">&lang;</button>
+            <button id="next_ha">&rang;</button>
+        </div>
+        <ul class="dots_ha">
+            <li class="active_ha"></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+    <div class="categories_ha">
+        <div class="category_ha">
+            <h2>Italian Recipes</h2>
+            <div class="recipes_ha">
+                <div class="recipe-wrapper_ha">
+                    <a href="recipes/tartufo.html" class="recipe-card_ha">
+                        <img src="recipes/tartufo.png" alt="Italian Recipe 1">
+                        <div class="recipe-info_ha">
+                            <h3>Tartufo</h3>
+                            <p>Tartufo is a classic Italian dessert that you can make at home.</p>
+                        </div>
+                    </a>
+                    <a href="recipes/buttershrimp.html" class="recipe-card_ha">
+                        <img src="recipes/buttershrimp.jpg" alt="Italian Recipe 2">
+                        <div class="recipe-info_ha">
+                            <h3>Tuscan Butter Shrimp</h3>
+                            <p>These Tuscan butter shrimp, in a delightful cherry tomato and sun-dried tomato cream sauce, can be served over pasta or polenta, or with a salad and toasted sourdough bread.</p>
+                        </div>
+                    </a>
+                    <a href="recipes/selmon.html" class="recipe-card_ha">
+                        <img src="recipes/selmon.png" alt="Italian Recipe 3">
+                        <div class="recipe-info_ha">
+                            <h3>Tuscan Salmon</h3>
+                            <p>Flavorful salmon fillets baked in a creamy Tuscan sauce with garlic, sun-dried tomatoes, and spinach.</p>
+                        </div>
+                    </a>
+
+                    <a href="recipes/tuna.html" class="recipe-card_ha">
+                        <img src="recipes/tuna.png" alt="Beef Recipe 1">
+                        <div class="recipe-info_ha">
+                            <h3>Spicy Tuna Puttanesca</h3>
+                            <p>A zesty twist on the classic puttanesca, featuring tender tuna in a spicy, tangy tomato sauce with olives, capers, and garlic.</p>
+                        </div>
+                    </a>
+                    <a href="recipes/saltimbocca.html" class="recipe-card_ha">
+                        <img src="recipes/saltimbocca.png" alt="Beef Recipe 2">
+                        <div class="recipe-info_ha">
+                            <h3>Sandy's Chicken Saltimbocca</h3>
+                            <p>Tender chicken breasts topped with prosciutto and sage, cooked in a savory white wine sauce.</p>
+                        </div>
+                    </a>
+                    <a href="recipes/polenta.html" class="recipe-card_ha">
+                        <img src="recipes/polenta.png" alt="Beef Recipe 3">
+                        <div class="recipe-info_ha">
+                            <h3>Polenta</h3>
+                            <p>A creamy, versatile Italian cornmeal dish that can be served soft or allowed to set and crisp up, perfect as a side or base for savory toppings.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="recipe-navigation_ha">
+                    <button id="prev_recipes" class="nav-btn_ha">◀</button>
+                    <button id="next_recipes" class="nav-btn_ha">▶</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="category_ha">
+            <h2>Italian Recipes</h2>
+            <div class="recipes_ha">
+                <div class="recipe-wrapper_ha">
+                    <a href="chinese recipes/chowmin.html" class="recipe-card_ha">
+                        <img src="chinese recipes/chowmin.png" alt="Italian Recipe 1">
+                        <div class="recipe-info_ha">
+                            <h3>Chow Mein</h3>
+                            <p>A stir-fried noodle dish with crisp vegetables and your choice of meat or tofu, seasoned with savory soy sauce and garlic.</p>
+                        </div>
+                    </a>
+                    <a href="chinese recipes/friedrice.html" class="recipe-card_ha">
+                        <img src="chinese recipes/friedrice.png" alt="Italian Recipe 2">
+                        <div class="recipe-info_ha">
+                            <h3>Chicken Fried Rice</h3>
+                            <p>A hearty dish of tender chicken and fluffy rice stir-fried with vegetables, eggs, and a savory blend of soy sauce and spices.</p>
+                        </div>
+                    </a>
+                    <a href="chinese recipes/panbun.html" class="recipe-card_ha">
+                        <img src="chinese recipes/panbun.png" alt="Italian Recipe 3">
+                        <div class="recipe-info_ha">
+                            <h3>Pan Fried Veggies Bun</h3>
+                            <p>A savory bun filled with a delicious mix of pan-fried vegetables and seasonings, offering a crispy exterior and a flavorful, tender filling.</p>
+                        </div>
+                    </a>
+                    
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="main_hm">
+        <div class="wrapper_hm">
+            <h2>Please Login To Continue</h2>
+            <i class="fas fa-times cross_hm"></i>
+
+            <div class="container_hm">
+                <div class="form_container_hm">
+                    <div class="btn_hm">
+                        <button class="sign_in_hm active_hm">Sign In</button>
+                        <button class="sign_up_hm">Sign Up</button>
+                    </div>
+
+                    <form action="#" class="form_hm sign_in_form_hm">
+                        <div class="input_container_hm">
+                            <input type="email" name="" id="" placeholder="Username or email" required>
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+
+                        <div class="input_container_hm">
+                            <input type="password" name="" id="" placeholder="Password" class="pass_hm" required>
+                            <i class="fas fa-lock"></i>
+                            <i class="fas fa-eye eye_hm"></i>
+                        </div>
+
+                        <div class="remember_hm">
+                            <div class="checkBox_hm">
+                                <input type="checkbox" name="" id="">
+                                <span class="rememberTxt_hm">Remember me</span>
+                            </div>
+                            <a href="#" class="text_hm">Forgot Password</a>
+                        </div>
+
+                        <button>Sign In</button>
+                    </form>
+
+                    <form action="#" class="form_hm sign_up_form_hm">
+                        <div class="input_container_hm">
+                            <input type="email" name="" id="" placeholder="Username or  Email" required>
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+
+                        <div class="input_container_hm">
+                            <input type="password" name="" id="" placeholder="Password" class="pass1_hm" required>
+                            <i class="fas fa-lock"></i>
+                            <i class="fas fa-eye eye_hm eye1_hm"></i>
+                        </div>
+
+                        <div class="input_container_hm">
+                            <input type="password" name="" id="" placeholder="Confirm Password" class="pass2_hm" required>
+                            <i class="fas fa-lock"></i>
+                            <i class="fas fa-eye eye_hm eye2_hm"></i>
+                        </div>
+
+                        <div class="remember_hm">
+                            <div class="checkBox_hm">
+                                <input type="checkbox" name="" id="">
+                                <span class="rememberTxt_hm">Remember me</span>
+                            </div>
+                            <a href="#" class="text_hm">Forgot Password</a>
+                        </div>
+
+                        <button>Sign Up</button>
+                    </form>
+
+                    <h3><a href="#" class="h3_link_hm">Why Create an Account?</a></h3>
+                    <p>By creating this account, you agree to our <a href="#" class="p_text_hm">Privacy</a> &amp; <a href="#" class="p_text_hm">Cookie Policy.</a></p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer_rf">
+        <p class="end_rf">&copy; 2024 Smitten Kitchen. All rights reserved.</p>
+        <p class="end_rf">Contact: smitten_kitchen@gmail.com</p>
+        <p><a href="https://facebook.com" class="a_rf"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://Instagram.com" class="a_rf"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://linkedin.com" class="a_rf"><i class="fa-brands fa-linkedin"></i></a>
+        </p>
+    </footer>
+    
+    <a href="#" class="top_rf">&#8593;</a>
+    <script src="Scripts/script_rf.js"></script>
+    <script src="Scripts/script_hm.js"></script>
+    <script src="Scripts/script_ha.js"></script>
+</body>
+</html>

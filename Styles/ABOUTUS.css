@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #222222;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.current-ae {
+    color: #f4a261;
+}
+.current-ae:hover{
+    color: #fff;
+}
+
+.about-ae{
+    width: 100%;
+    height: 100vh;
+    padding: 35px 0;
+}
+.about-ae h1{
+    color: #f4a261;
+    font-size: 60px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.about-ae .about_main-ae{
+    position: relative;
+    top: 0;
+    left: 55%;
+    transform: translate(-50%,0);
+    display: flex;
+}
+.about-ae .about_main-ae .about_image-ae{
+    display: flex;
+    margin-top: 0;
+}
+.about-ae .about_main-ae .about_image-ae .about_small_image-ae{
+    display: flex;
+    flex-direction: column;
+    top: 0;
+}
+.about-ae .about_main-ae .about_image-ae .about_small_image-ae img{
+    height: 90px;
+    margin: 5px 0;
+    cursor: pointer;
+    background: linear-gradient(to right, #373637 , #100f10);
+    border-radius: 6px;
+    padding: 5px 5px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.6);
+    opacity: 0.8;
+    transition: 0.3s;
+}
+.about-ae .about_main-ae .about_image-ae .about_small_image-ae img:hover{
+    opacity: 1;
+}
+.about-ae .about_main-ae .image_contaner-ae{
+    padding: 10px;
+}
+.about-ae .about_main-ae .image_contaner-ae img{
+    cursor: pointer;
+    border: 3px solid #373637;
+    border-radius: 20px;
+    height: 360px;
+    width: 300px;
+    padding: 30px;
+    box-shadow: 0 0 8px #100f10;
+    opacity: 0.9;
+}
+.about-ae .about_main-ae .image_contaner-ae img:hover{
+    opacity: 1;
+} 
+.about-ae .about_main-ae .about_text-ae{
+    margin-top: 60px;
+}
+.about-ae .about_main-ae .about_text-ae p{
+    line-height: 22px;
+    width: 550px;
+    text-align: justify;
+    padding: 30px 30px;
+    border: 2px solid #373637;
+    border-radius: 20px;
+    box-shadow: 0 0 8px #100f10;
+}
+
+
+.contact-us-ae {
+    background-color: #4d4a4a;
+    margin-top: 30px;
+    padding-bottom: 10px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-us-ae h2, .contact-us-ae p {
+    text-align: center;
+}
+.contact-us-ae form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-us-ae input, .contact-us-ae textarea {
+    width: 320px;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 15px;
+}
+.contact-us-ae button {
+    width: 20%;
+    padding: 10px;
+    background-color: #2a9d8f;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.contact-us-ae button:hover {
+    background-color: #25e4ce;
+}

@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --xPos: 50%;
+    --yPos: 50%;
+}
+
+body_hm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+.open_form_hm span {
+    position: relative;
+    z-index: 1;
+}
+
+.open_form_hm:hover {
+    color: #fff;
+}
+
+.main_hm {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease-in-out;
+    z-index: 1;
+}
+
+.main_hm.active_hm {
+    opacity: 1;
+    visibility: visible;
+}
+
+.wrapper_hm {
+    width: 550px;
+    max-width: 95%;
+    padding: 20px;
+    padding-top: 15px;
+    background-color: rgb(239, 241, 243);
+    border-radius: 5px;
+    position: absolute;
+    transform: translateY(-115%);
+    transition: .7s cubic-bezier(0.175, 0.885, 0.32, 1.127);
+}
+
+.main_hm.active_hm .wrapper_hm {
+    transform: translateY(0);
+}
+
+.wrapper_hm .fa-times_hm {
+    position: absolute;
+    top: 11px;
+    right: 40px;
+    font-size: 25px;
+    color: #979faf;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.wrapper_hm .fa-times_hm:hover {
+    color: #52504e;
+}
+
+.wrapper_hm h2 {
+    text-align: center;
+    font-size: 18px;
+    color: #52504e;
+    margin-bottom: 7px;
+}
+
+.container_hm {
+    width: 100%;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 5px;
+}
+
+.form_container_hm {
+    width: 100%;
+    background: #ffffff;
+    padding-bottom: 20px;
+    border: 1px solid rgb(221, 221, 221);
+    border-top: none;
+}
+
+.btn_hm {
+    display: flex;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.btn_hm button {
+    border: none;
+    outline: none;
+    background-color: rgb(233, 235, 238);
+    color: rgb(136, 136, 136);
+    width: 50%;
+    padding: 12px;
+    border-top: 2px solid rgb(233, 235, 238);
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn_hm button:hover {
+    color: #f9004d;
+    transition: .3s ease-in-out;
+}
+
+.btn_hm button.active_hm {
+    color: rgb(85, 85, 85);
+    border-top-color: #f9004d;
+    background-color: #fff;
+    cursor: auto;
+}
+
+.form_container_hm form {
+    padding: 27px;
+    padding-bottom: 6px;
+}
+
+.form_container_hm .sign_up_form_hm {
+    display: none;
+}
+
+.input_container_hm {
+    position: relative;
+    width: 100%;
+}
+
+.input_container_hm input:not([type = checkbox]) {
+    display: block;
+    margin-bottom: 15px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid rgb(194, 199, 208);
+    box-shadow: rgb(151 159 175 / 10%) 0px 1px 2px inset, rgb(151 159 175 / 5%) 0px 1px 15px inset;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5em;
+    padding-left: 42px;
+    color: rgb(64, 64, 64);
+}
+
+.input_container_hm i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #979faf;
+    font-size: 22px;
+}
+
+.fa-user-circle, .fa-lock, .fa-envelope, .fa-building-columns {
+    left: 10px;
+}
+
+.eye_hm {
+    right: 10px;
+    cursor: pointer;
+    display: none;
+}
+
+.fa-eye-slash {
+    font-size: 20px !important;
+}
+
+.eye_hm:hover {
+    color: #52504e;
+}
+
+input:not([type = checkbox]):is(:focus, :valid) + i {
+    color: #52504e;
+}
+
+.remember_hm {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #f9004d;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.checkBox_hm {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.checkBox_hm span, .text_hm {
+    margin-left: 3px;
+    font-size: 12px;
+    color: rgb(64, 64, 64);
+    font-weight: 600;
+}
+
+.rememberTxt_hm:hover {
+    color: rgb(136, 136, 136);
+    cursor: pointer;
+}
+
+form button {
+    width: 100%;
+    border: none;
+    outline: none;
+    margin-top: 20px;
+    border: 5px;
+    padding: 9px;
+    background-image: linear-gradient(#f9004d, #f40e57);
+    border: 1px solid #f9004d;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+form button:hover {
+    color: #fff;
+}
+
+h3 {
+    text-align: center;
+    font-size: 15px;
+}
+
+h3 a {
+    color: #f9004d;
+    font-weight: 500;
+}
+
+p {
+    font-size: 10px;
+    text-align: center;
+    margin-top: 15px;
+    color: #52504e;
+}
+
+.p_text_hm {
+    color: #f9004d;
+}
